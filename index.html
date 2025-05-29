@@ -19,6 +19,7 @@
             --light-bg: #f9f9f9;  /* 浅色背景 */
             --text-color: #333;  /* 主要文字颜色 */
             --light-text: #777;  /* 浅色文字 */
+            --gold-color: #ffd700;
         }
         
         /* ========== 全局样式 ========== */
@@ -207,7 +208,7 @@
             padding-left: 25px;  /* 左内边距25px */
             margin-bottom: 12px;  /* 下边距12px */
         }
-        
+
         /* 荣誉项前的星星图标 */
         .honor-item::before {
             content: "\f005";  /* Font Awesome星星图标 */
@@ -218,6 +219,27 @@
             color: var(--accent-color);  /* 使用强调色 */
         }
         
+        /* ========== 个人荣誉 ========== */
+        .match-list {
+            list-style: none;  /* 去除列表样式 */
+            margin-bottom: 25px;  /* 下边距25px */
+        }    
+
+        .match-item {
+            position: relative;  /* 相对定位 */
+            padding-left: 25px;  /* 左内边距25px */
+            margin-bottom: 12px;  /* 下边距12px */
+        }
+
+        /* 荣誉项前的奖杯图标 */
+        .match-item::before {
+            content: "\f091"; 
+            font-family: "Font Awesome 6 Free"; 
+            font-weight: 900; 
+            position: absolute; 
+            left: 0; 
+            color: var(--gold-color); 
+        }
         /* ========== 技术技能 ========== */
         /* 美化技术技能列表 */
         .skills-container {
@@ -365,7 +387,7 @@
                 <!-- 姓名和标题 -->
                 <div class="name-title">
                     <h1 class="name">戚宇捷</h1>
-                    <h2 class="title">计算机科学与技术 | 本科二年级</h2>
+                    <h2 class="title">计算机科学与技术 | 本科二年级(2027届)</h2>
                 </div>
                 
                 <!-- 联系信息 -->
@@ -380,7 +402,7 @@
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>23050934@hdu.edu.cn</span>
+                        <span>2820736649@qq.com</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-university"></i>
@@ -397,7 +419,7 @@
                     <div class="job-intention">
                         <div class="intention-item">
                             <span class="intention-label">意向岗位:</span>
-                            <span>C++后端开发实习生</span>
+                            <span>后端开发实习生</span>
                         </div>
                         <div class="intention-item">
                             <span class="intention-label">期望日薪:</span>
@@ -416,10 +438,84 @@
                     <div class="education-item">
                         <div class="education-header">
                             <span class="school-name">杭州电子科技大学</span>
-                            <span class="education-period">2023.09 - 2027.06</span>
+                            <span class="education-period">2023.09 至今 </span>
                         </div>
                         <div class="major-degree">计算机科学与技术 本科</div>
                         <div>GPA: 4.612/5.0 (专业前5%)</div>
+                    </div>
+                </section>
+                
+                <!-- 竞赛奖项部分 -->
+                <section class="section">
+                    <h3 class="section-title"><i class="fas fa-medal"></i>竞赛奖项</h3>
+                    <ul class="match-list">
+                        <li class="match-item">2025年美国大学生数学建模竞赛国际一等奖</li>
+                        <li class="match-item">第十六届全国大学生数学竞赛一等奖</li>
+                        <li class="match-item">中国国际大学生创新大赛（2024）银奖</li>
+                        <li class="match-item">2024亚太地区大学生数学建模竞赛二等奖</li>
+                        <li class="match-item">浙江省国际大学生创新创业大赛金奖</li>
+                        <li class="match-item">2024年浙江省大学生高等数学竞赛一等奖</li>
+                        <li class="match-item">全国大学生数学建模竞赛浙江省二等奖</li>
+                        <li class="match-item">2025年中国大学生计算机设计大赛浙江省级赛二等奖</li>
+                        <li class="match-item">第十六届中国大学生服务外包创新创业大赛东部赛区三等奖</li>
+                        <li class="match-item">2024年浙江省大学生物理创新竞赛三等奖</li>
+                        <li class="match-item">校级院级竞赛奖项若干</li>
+                    </ul>
+                </section>
+
+                <!-- 项目经验部分 -->
+                <section class="section">
+                    <h3 class="section-title"><i class="fas fa-briefcase"></i>项目经验</h3>
+                    
+                    <!-- 项目1 -->
+                    <div class="project-item">
+                        <div class="project-header">
+                            <span class="project-name">“烟火视界”——多Agent合作餐厅模拟经营系统 | 项目负责人</span>
+                            <span class="project-period">2025.01 - 2025.04</span>
+                        </div>
+                        <div class="project-tech">技术栈: python, 智能体, flask, LLM</div>
+                        <div class="project-description">
+                            基于文心一言大模型的多智能体合作系统，一款由智能体自身驱动的低交互性系统。
+                        </div>
+                        <ul class="project-highlights">
+                            <li>原创交互架构：创新搭建适合餐厅场景的智能体交互架构，实现顾客接待、菜品制作、服务响应等多智能体协同逻辑开发，保证系统流畅模拟真实餐厅复杂业务流程。</li>
+                            <li>智能优化赋能：利用文心一言大模型进行智能体决策优化，显著增强系统经营模拟的“真实性”与“智能性”。</li>
+                            <li>新视角可视化：设计独特的餐厅经营可视化界面，将各智能体运行状态、顾客满意度反馈、经营者反思等关键数据直观呈现，为用户提供全新的模拟经营洞察体验。</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 项目2 -->
+                    <div class="project-item">
+                        <div class="project-header">
+                            <span class="project-name">大学物理实验AI助手 | 软件开发组长</span>
+                            <span class="project-period">2025.04 - 2025.06</span>
+                        </div>
+                        <div class="project-tech">技术栈: flask, STM32, python, HTML, CSS, NumPy</div>
+                        <div class="project-description">
+                            一款集成了实验数据误差分析、实验结果计算、实验相关内容答疑的智能实验助手。
+                        </div>
+                        <ul class="project-highlights">
+                            <li>智能交互升级：精准面向实验内容的prompt工程，实现对用户的有问必答。</li>
+                            <li>硬件协同运行：与STM32硬件平台深度协作，完成实验设备数据实时采集与传输功能开发，对实时测得的实验数据同步分析指出误差及其可能原因。</li>
+                            <li>创新用户体验：基于Flask构建轻量化后端服务，搭配HTML、CSS打造简洁直观交互界面，使新手学生实验轻松上手。</li>
+                        </ul>
+                    </div>
+
+                    <!-- 项目3 -->
+                    <div class="project-item">
+                        <div class="project-header">
+                            <span class="project-name">人事管理数据库系统 | 项目负责人</span>
+                            <span class="project-period">2025.04 - 2025.06</span>
+                        </div>
+                        <div class="project-tech">技术栈: SQL SERVER, HTML, CSS, SQL解析</div>
+                        <div class="project-description">
+                            使用SQL SERVER实现的简易数据库系统，支持基本的SQL语句操作。
+                        </div>
+                        <ul class="project-highlights">
+                            <li>设计简单的SQL解析器，支持SELECT/INSERT等操作。</li>
+                            <li>精心设计的触发器、存储过程和视图。</li>
+                            <li>支持事务的原子性和持久性。</li>
+                        </ul>
                     </div>
                 </section>
                 
@@ -429,71 +525,15 @@
                     <ul class="honors-list">
                         <li class="honor-item">2023-2024学年浙江省政府奖学金</li>
                         <li class="honor-item">2023-2024学年校级优秀学生干部</li>
-                        <li class="honor-item">校级优秀学生一等奖学金&times;3</li>
-                        <li class="honor-item">中国国际大学生创新创业大赛银奖</li>
-                        <li class="honor-item">浙江省国际大学生创新创业大赛金奖</li>
-                        <li class="honor-item">全国大学生数学建模竞赛浙江省二等奖</li>
-                        <li class="honor-item">全国大学生数学竞赛一等奖</li>
+                        <li class="honor-item">2024年度杭州电子科技大学优秀共青团员</li>
+                        <li class="honor-item">2023-2024学年第一学期优秀学生一等奖学金</li>
+                        <li class="honor-item">2023-2024学年第二学期优秀学生一等奖学金</li>
+                        <li class="honor-item">2024-2025学年第一学期优秀学生一等奖学金</li>
                     </ul>
                 </section>
-                
-                <!-- 美化版技术技能部分 -->
-                <section class="section">
-                    <h3 class="section-title"><i class="fas fa-code"></i>技术技能</h3>
-                    <div class="skills-container">
-                        <ul class="skills-list">
-                            <li><i class="fas fa-cog skill-icon"></i>熟练掌握C/C++语言</li>
-                            <li><i class="fab fa-python skill-icon"></i>熟悉Python语言</li>
-                            <li><i class="fas fa-database skill-icon"></i>熟练掌握SQL Server数据库</li>
-                            <li><i class="fas fa-cog skill-icon"></i>熟悉常见数据结构与算法</li>
-                            <li><i class="fas fa-code skill-icon"></i>HTML</li>
-                            <li><i class="fas fa-code-branch skill-icon"></i>Git版本控制</li>
-                        </ul>
-                    </div>
-                </section>
-                
-                <!-- 项目经验部分 -->
-                <section class="section">
-                    <h3 class="section-title"><i class="fas fa-briefcase"></i>项目经验</h3>
-                    
-                    <!-- 项目1 -->
-                    <div class="project-item">
-                        <div class="project-header">
-                            <span class="project-name">高性能网络服务器框架</span>
-                            <span class="project-period">2024.03 - 2024.06</span>
-                        </div>
-                        <div class="project-tech">技术栈: C++11, Epoll, 多线程, 线程池</div>
-                        <div class="project-description">
-                            基于Linux epoll和多线程技术实现的高性能服务器框架，支持高并发连接处理。
-                        </div>
-                        <ul class="project-highlights">
-                            <li>采用Reactor模式设计，支持5000+并发连接</li>
-                            <li>实现线程池管理，提高资源利用率</li>
-                            <li>使用智能指针管理资源，避免内存泄漏</li>
-                            <li>加入日志系统，便于调试和问题追踪</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- 项目2 -->
-                    <div class="project-item">
-                        <div class="project-header">
-                            <span class="project-name">人事管理数据库系统</span>
-                            <span class="project-period">2025.03 - 2025.05</span>
-                        </div>
-                        <div class="project-tech">技术栈: C++, B+树, 文件IO, SQL解析</div>
-                        <div class="project-description">
-                            模仿MySQL实现的简易数据库系统，支持基本的SQL语句操作。
-                        </div>
-                        <ul class="project-highlights">
-                            <li>实现B+树索引结构，提高查询效率</li>
-                            <li>设计简单的SQL解析器，支持SELECT/INSERT等操作</li>
-                            <li>采用LRU缓存机制优化频繁访问数据</li>
-                            <li>支持事务的原子性和持久性</li>
-                        </ul>
-                    </div>
-                </section>
-                
+
                 <!-- 实习经历部分 -->
+                <!--
                 <section class="section">
                     <h3 class="section-title"><i class="fas fa-laptop-code"></i>实习经历</h3>
                     
@@ -511,15 +551,32 @@
                         </ul>
                     </div>
                 </section>
+                -->
                 
+                <!-- 美化版技术技能部分 -->
+                <section class="section">
+                    <h3 class="section-title"><i class="fas fa-code"></i>技术技能</h3>
+                    <div class="skills-container">
+                        <ul class="skills-list">
+                            <li><i class="fas fa-cog skill-icon"></i>熟练掌握C/C++语言</li>
+                            <li><i class="fab fa-python skill-icon"></i>熟悉Python语言</li>
+                            <li><i class="fas fa-database skill-icon"></i>熟练掌握SQL Server数据库</li>
+                            <li><i class="fas fa-cog skill-icon"></i>熟悉常见数据结构与算法</li>
+                            <li><i class="fas fa-code skill-icon"></i>HTML</li>
+                            <li><i class="fas fa-code-branch skill-icon"></i>Git版本控制</li>
+                        </ul>
+                    </div>
+                </section>
+
                 <!-- 自我评价部分 -->
                 <section class="section">
                     <h3 class="section-title"><i class="fas fa-user-tie"></i>自我评价</h3>
                     <div class="self-evaluation">
-                        <p>扎实的C++基础，熟悉常用数据结构和算法，对系统编程有浓厚兴趣。</p>
+                        <p>责任心强，工作效率高。</p>
+                        <p>扎实的C++基础，熟悉常用数据结构和算法。</p>
                         <p>良好的学习能力和问题解决能力，能快速掌握新技术。</p>
                         <p>团队协作意识强，参与过多个团队项目开发。</p>
-                        <p>热爱编程，经常在LeetCode等平台练习算法题。</p>
+                        <p>对编程抱有热情，有自己研究项目的兴趣。</p>
                     </div>
                 </section>
             </div>
